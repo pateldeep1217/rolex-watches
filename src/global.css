@@ -1,0 +1,123 @@
+/* roboto-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v32-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v32-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v32-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v32-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* Light Mode Colors */
+  --primary-color: rgba(255, 181, 104, 1);
+  --secondary-color: rgba(43, 43, 43, 1);
+  --accent-color: rgba(54, 54, 54, 1);
+  --heading-color: rgba(46, 46, 46, 1);
+  --body-text-color: rgba(89, 89, 89, 1);
+  --muted-text-color: rgba(140, 140, 140, 1);
+  --background-color: rgba(252, 252, 252, 1);
+  --container-background: rgba(255, 255, 255, 1);
+  --border-color: rgba(240, 240, 240, 1);
+
+  --largest-font-size: clamp(
+    2rem,
+    4vw + 1rem,
+    2.5rem
+  ); /* Adjusts between 32px and 40px */
+  --h1-font-size: clamp(
+    1.5rem,
+    3vw + 1rem,
+    2.25rem
+  ); /* Adjusts between 24px and 36px */
+  --h2-font-size: clamp(
+    1.25rem,
+    2.5vw + 0.5rem,
+    1.5rem
+  ); /* Adjusts between 20px and 24px */
+  --h3-font-size: clamp(
+    1rem,
+    2vw + 0.5rem,
+    1.25rem
+  ); /* Adjusts between 16px and 20px */
+  --body-font-size: clamp(
+    0.9375rem,
+    1.5vw + 0.5rem,
+    1rem
+  ); /* Adjusts between 15px and 16px */
+  --small-font-size: clamp(
+    0.8125rem,
+    1.2vw + 0.25rem,
+    0.875rem
+  ); /* Adjusts between 13px and 14px */
+  --smaller-font-size: clamp(
+    0.75rem,
+    1vw + 0.25rem,
+    0.8125rem
+  ); /* Adjusts between 12px and 13px */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode Colors */
+    --primary-color: rgba(239, 190, 138, 1);
+    --secondary-color: rgba(61, 61, 61, 1);
+    --accent-color: rgba(71, 71, 71, 1);
+    --heading-color: rgba(242, 242, 242, 1);
+    --body-text-color: rgba(191, 191, 191, 1);
+    --muted-text-color: rgba(191, 191, 191, 1);
+    --background-color: rgba(31, 31, 31, 1);
+    --container-background: rgba(41, 41, 41, 1);
+    --border-color: rgba(51, 51, 51, 1);
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--body-font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+button {
+  font-family: inherit;
+}
+
+h4 {
+  font-size: var(--body-font-size);
+  font-weight: 700;
+}
