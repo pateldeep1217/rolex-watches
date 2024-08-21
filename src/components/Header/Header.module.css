@@ -1,2 +1,16 @@
 .header {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  gap: 1rem;
+  padding: 18px 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-right: auto;
 }

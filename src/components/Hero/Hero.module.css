@@ -1,0 +1,23 @@
+.heroImg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+
+  position: absolute;
+  rotate: -90deg;
+  top: 20rem;
+  margin-left: 1.5rem;
+  width: 20px;
+  list-style: none;
+}
+
+.links a {
+  color: var(--muted-text-color);
+  font-size: var(--smaller-font-size);
+}
