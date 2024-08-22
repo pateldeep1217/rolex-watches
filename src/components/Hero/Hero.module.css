@@ -1,27 +1,26 @@
 .hero {
   display: grid;
-  height: 40rem;
-
-  grid-template-rows: repeat(2, 1fr);
+  gap: 2.8rem;
+  grid-template-rows: 375px 1fr;
+  position: relative;
 }
 
 .heroImg {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -1.5rem;
+  top: -3.55rem;
   z-index: 1;
 }
 
 .links {
   display: flex;
   gap: 1rem;
-
-  position: absolute;
-  rotate: -90deg;
-  top: 18rem;
-  margin-left: 1.5rem;
-  width: 20px;
+  left: 0;
   list-style: none;
+  position: absolute;
+  rotate: -180deg;
+  top: 6rem;
+  writing-mode: vertical-lr;
 }
 
 .links a {
@@ -29,8 +28,16 @@
 }
 
 .heroContent {
+  display: grid;
+  gap: 2rem;
   grid-row: 2;
-  padding: 0 1.5rem;
-  padding-top: 6rem;
   z-index: 4;
+}
+
+.heroText {
+  display: grid;
+  gap: 1rem;
+}
+.price {
+  color: var(--primary-color);
 }
