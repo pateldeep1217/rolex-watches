@@ -6,6 +6,7 @@ function App() {
     <main>
       <Header />
       <Hero />
+      <h1>hello</h1>
     </main>
   );
 }

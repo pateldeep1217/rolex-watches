@@ -1,12 +1,20 @@
 button {
   transition: all 0.3s ease;
+  padding: 1.25rem 1.5rem;
 }
 
 .ghost {
   background-color: transparent;
+  padding: 0;
 }
 .ghost:hover {
   transform: translateY(-2px);
 }
 .primary {
+  background-color: var(--button-primary-color);
+}
+
+.secondary {
+  background-color: var(--button-secondary-color);
+  color: var(--accent-color);
 }

@@ -9,7 +9,7 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <WatchIcon />
-        <h4 className={styles.logo}>Rolex</h4>
+        <h4>Rolex</h4>
       </div>
       <Button>
         <MoonIcon />

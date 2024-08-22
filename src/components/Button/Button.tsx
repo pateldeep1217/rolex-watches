@@ -8,9 +8,8 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 function Button({ children, variant = "ghost", ...props }: ButtonProps) {
-  const buttonClass = clsx(styles[variant]);
   return (
-    <button {...props} className={buttonClass}>
+    <button {...props} className={clsx(styles.button, styles[variant])}>
       {children}
     </button>
   );
