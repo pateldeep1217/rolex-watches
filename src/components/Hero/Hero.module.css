@@ -57,7 +57,6 @@
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 62vh 20px;
-    position: relative;
   }
   .heroImg {
     width: 480px;
@@ -80,7 +79,6 @@
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 40.5vh 20px;
-    position: relative;
   }
 
   .links {
@@ -88,8 +86,8 @@
   }
   .heroContent {
     grid-column: 1;
-    width: 23rem;
-    margin-left: 5rem;
+    width: 24rem;
+    margin-left: 8rem;
     margin-top: 5rem;
     grid-row: 1;
   }
