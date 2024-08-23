@@ -20,7 +20,7 @@ function Hero() {
         </ul>
 
         <div className={styles.heroImg}>
-          <HeroWatchImage />
+          <img src="../../../public/HomeImage.png" alt="" />
         </div>
 
         <div className={styles.heroContent}>
