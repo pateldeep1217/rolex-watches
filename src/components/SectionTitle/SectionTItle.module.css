@@ -1,0 +1,14 @@
+.title {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+.title::before {
+  content: "";
+  border: 1px solid var(--primary-color);
+  position: absolute;
+  width: 80%;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
