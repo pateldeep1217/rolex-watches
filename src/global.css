@@ -44,6 +44,7 @@
   --border-color: rgba(240, 240, 240, 1);
   --button-primary-color: rgba(43, 43, 43, 1);
   --button-secondary-color: rgba(191, 191, 191, 1);
+  --white-color: #fff;
 
   --largest-font-size: clamp(
     2rem,
@@ -124,7 +125,7 @@ h4 {
 }
 button {
   font: inherit;
-  color: inherit;
+  color: var(--white-color);
   border: none;
   cursor: pointer;
 }
