@@ -1,18 +1,18 @@
-import clsx from "clsx";
-import React from "react";
-import styles from "./Button.module.css";
+import clsx from 'clsx'
+
+import styles from './Button.module.css'
 // Define the type for props
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: React.ReactNode;
-  variant?: "ghost" | "primary" | "secondary";
-};
+  children: React.ReactNode
+  variant?: 'ghost' | 'primary' | 'secondary'
+}
 
-function Button({ children, variant = "ghost", ...props }: ButtonProps) {
+function Button({ children, variant = 'ghost', ...props }: ButtonProps) {
   return (
     <button {...props} className={clsx(styles.button, styles[variant])}>
       {children}
     </button>
-  );
+  )
 }
 
-export default Button;
+export default Button
